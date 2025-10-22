@@ -38,8 +38,8 @@ table_noOfColumns: 4
 table:
   columnNames: Item Name,Quantity,Unit Price,Net Price
 aws:
-  accessKey: { AWS_ACCESS_KEY }
-  secret: { GtpV5kXtgKhxaIN1aLfTHltYrFyhpwV9onoyMF16 }
+  accessKey: AKIAXYKJXEFD43SOOQXA
+  secret: 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
   region: us-east-1
   bucketName: jkinvoicestorage
 wati:
@@ -55,3 +55,4 @@ wati:
       msg:
         url: ""
   token: ""
+
