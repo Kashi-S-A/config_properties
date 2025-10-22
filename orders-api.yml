@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecomm_backend
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    rest:
+      base-path: /api2
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+razorpay:
+  key:
+    id: rzp_test_9Rv894lScSIEg0
+    secret: SCdIT3EPCfcNDwpBdmTnVt0s
+server:
+  port: 8081

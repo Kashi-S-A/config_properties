@@ -1,0 +1,57 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ecomm_backend
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    rest:
+      base-path: /api5
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: kashi.sa200@gmail.com
+    password: hdsw plfv kkjr orhh
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+server:
+  port: 8084
+pdfDir: invoices/
+reportFileName: invoice
+reportFileNameDateFormat: dd_MMMM_yyyy
+localDateFormat: '"dd MMMM yyyy HH:mm:ss"'
+logoImgPath: logo.jpg
+logoImgScale: 50,50
+currencySymbol: "Rs "
+table_noOfColumns: 4
+table:
+  columnNames: Item Name,Quantity,Unit Price,Net Price
+aws:
+  accessKey: { AWS_ACCESS_KEY }
+  secret: { GtpV5kXtgKhxaIN1aLfTHltYrFyhpwV9onoyMF16 }
+  region: us-east-1
+  bucketName: jkinvoicestorage
+wati:
+  notification:
+    template:
+      name: delivery_notification
+  payment:
+    reminder:
+      template:
+        name: payment_reminders
+  send:
+    template:
+      msg:
+        url: ""
+  token: ""

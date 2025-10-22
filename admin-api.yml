@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecomm_backend
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    rest:
+      base-path: /api4
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8083
