@@ -17,7 +17,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:1111/
+        url: http://service-admin-server:80/
   mail:
     host: smtp.gmail.com
     port: 587
@@ -59,6 +59,7 @@ wati:
       msg:
         url: ""
   token: ""
+
 
 
 
